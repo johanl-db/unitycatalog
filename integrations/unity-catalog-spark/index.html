@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/unitycatalog_256x256.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.38">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -441,6 +441,8 @@
       
         
       
+        
+      
     
     
     
@@ -523,6 +525,16 @@
     
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -540,7 +552,196 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../usage/api/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/api/catalogs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Catalogs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/api/schemas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schemas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/api/tables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/api/volumes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Volumes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/api/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/api/models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -551,8 +752,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             Tables
           </label>
@@ -1908,19 +2109,14 @@ bin/start-uc-server
 <h2 id="working-with-unity-catalog-tables-with-apache-spark-and-delta-lake-locally">Working with Unity Catalog Tables with Apache Spark and Delta Lake Locally<a class="headerlink" href="#working-with-unity-catalog-tables-with-apache-spark-and-delta-lake-locally" title="Permanent link">&para;</a></h2>
 <p>Let’s start running some Spark SQL queries in the Spark SQL shell (<code>bin/spark-sql</code>) or PySpark shell (<code>bin/pyspark</code>)
 within the terminal of your Apache Spark 3.5.3 folder against your local UC.</p>
-<p>You can run the code below to work with data stored in the <code>unity</code> catalog that comes pre-loaded with the local Unity Catalog server.</p>
-<div class="admonition warning">
-<p class="admonition-title">Catalog name in configs</p>
-<p>If you want to work with data stored in another catalog, make sure to change <code>unity</code> in the Spark configs to <code>&lt;your_catalog_name&gt;</code>, e.g. <code>spark.sql.catalog.&lt;your_catalog_name&gt;</code>.</p>
-</div>
+<p>You can run the code below to work with data stored in a Unity Catalog server.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Spark SQL</label><label for="__tabbed_2_2">PySpark</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code>bin/spark-sql<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;local-uc-test&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--master<span class="w"> </span><span class="s2">&quot;local[*]&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--packages<span class="w"> </span><span class="s2">&quot;io.delta:delta-spark_2.12:3.2.1,io.unitycatalog:unitycatalog-spark_2.12:0.2.0&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--packages<span class="w"> </span><span class="s2">&quot;io.delta:delta-spark_2.13:4.0.0,io.unitycatalog:unitycatalog-spark_2.13:0.3.0&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.spark_catalog=io.unitycatalog.spark.UCSingleCatalog&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.&lt;catalog_name&gt;=io.unitycatalog.spark.UCSingleCatalog&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.&lt;catalog_name&gt;.uri=http://localhost:8080&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.&lt;catalog_name&gt;.token=&quot;</span><span class="w"> </span><span class="se">\</span>
@@ -1930,9 +2126,8 @@ within the terminal of your Apache Spark 3.5.3 folder against your local UC.</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code>bin/pyspark<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;local-uc-test&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--master<span class="w"> </span><span class="s2">&quot;local[*]&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--packages<span class="w"> </span><span class="s2">&quot;io.delta:delta-spark_2.12:3.2.1,io.unitycatalog:unitycatalog-spark_2.12:0.2.0&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--packages<span class="w"> </span><span class="s2">&quot;io.delta:delta-spark_2.13:4.0.0,io.unitycatalog:unitycatalog-spark_2.13:0.3.0&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.spark_catalog=io.unitycatalog.spark.UCSingleCatalog&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.&lt;catalog_name&gt;=io.unitycatalog.spark.UCSingleCatalog&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.&lt;catalog_name&gt;.uri=http://localhost:8080&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.&lt;catalog_name&gt;.token=&quot;</span><span class="w"> </span><span class="se">\</span>
@@ -1946,19 +2141,25 @@ within the terminal of your Apache Spark 3.5.3 folder against your local UC.</p>
 <p>Initially, this may take a few minutes to run to download the necessary dependencies. Afterwards, you can run some
 quick commands to see your UC assets within Spark SQL shell.</p>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">Configuring Spark session catalog</p>
+<p>Depending on your use case, you may need to configure the Spark session catalog, using for example:
+<div class="highlight"><pre><span></span><code>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog&quot;</span>
+</code></pre></div></p>
+</div>
 <p>Notice the following packages (<code>--packages</code>) and configurations (<code>--conf</code>)</p>
 <ul>
 <li><code>--packages</code> points to the delta-spark and unitycatalog-spark packages; update the version numbers to your current versions.</li>
 <li><code>spark.sql.catalog.&lt;catalog_name&gt;.uri</code> points to your local development UC instance</li>
 <li><code>spark.sql.catalog.&lt;catalog_name&gt;.token</code> is empty indicating there is no authentication; refer to <a href="../../server/auth/">auth</a> for more information.</li>
-<li><code>spark.sql.defaultCatalog=&lt;catalog_name&gt;</code> must be filled out to indicate the default catalog. The default name is <code>unity</code>.</li>
+<li><code>spark.sql.defaultCatalog=&lt;catalog_name&gt;</code> must be filled out to indicate the default catalog.</li>
 </ul>
 <details class="note">
 <summary>Three-part and two-part naming conventions</summary>
 <p><img alt="" src="https://cdn.prod.website-files.com/66954b344e907bd91f1c8027/66e2bafe16edde34db6395f2_AD_4nXdgqGKSeR2abf7zutk0fiALAs6vejg6EgUDgD_Ud9Xjy7nNkapMePCNH0zJw9Wv0uh6LYn7vlGYrRn4H74G9d0CouV0PWKsUTGkjfBKM5y4Br64B2P5Eapv97bCw0swV4pddsemaWU2zyYYlkKT6Ymxu2YO.png" /></p>
 <p>As noted in <a href="https://www.unitycatalog.io/blogs/unity-catalog-oss">Unity Catalog 101</a>, UC has a three-part naming
 convention of [<code>catalog</code>].[<code>schema</code>].[<code>asset</code>]. In the following examples, you can use the three-part notation such
-as <code>SELECT * FROM unity.default.marksheet;</code> or the two-part notation <code>SELECT * FROM default.marksheet;</code> as the
+as <code>SELECT * FROM &lt;catalog_name&gt;.default.marksheet;</code> or the two-part notation <code>SELECT * FROM default.marksheet;</code> as the
 <code>defaultCatalog</code> is already configured.</p>
 </details>
 <h3 id="optional-running-spark-sql-for-cloud-object-stores">[Optional] Running Spark SQL for Cloud Object Stores<a class="headerlink" href="#optional-running-spark-sql-for-cloud-object-stores" title="Permanent link">&para;</a></h3>
@@ -1969,9 +2170,8 @@ command.</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code>bin/spark-sql<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;s3-uc-test&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--master<span class="w"> </span><span class="s2">&quot;local[*]&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--packages<span class="w"> </span><span class="s2">&quot;org.apache.hadoop:hadoop-aws:3.3.4,io.delta:delta-spark_2.12:3.2.1,io.unitycatalog:unitycatalog-spark_2.12:0.2.0&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--packages<span class="w"> </span><span class="s2">&quot;org.apache.hadoop:hadoop-aws:3.4.1,io.delta:delta-spark_2.13:4.0.0,io.unitycatalog:unitycatalog-spark_2.13:0.3.0&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.spark_catalog=io.unitycatalog.spark.UCSingleCatalog&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.hadoop.fs.s3.impl=org.apache.hadoop.fs.s3a.S3AFileSystem&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.&lt;catalog_name&gt;=io.unitycatalog.spark.UCSingleCatalog&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.&lt;catalog_name&gt;.uri=http://localhost:8080&quot;</span><span class="w"> </span><span class="se">\</span>
@@ -1982,9 +2182,8 @@ command.</p>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code>bin/spark-sql<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;azure-uc-test&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--master<span class="w"> </span><span class="s2">&quot;local[*]&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--packages<span class="w"> </span><span class="s2">&quot;org.apache.hadoop:hadoop-azure:3.3.6,io.delta:delta-spark_2.12:3.2.1,io.unitycatalog:unitycatalog-spark_2.12:0.2.0&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--packages<span class="w"> </span><span class="s2">&quot;org.apache.hadoop:hadoop-azure:3.3.6,io.delta:delta-spark_2.13:4.0.0,io.unitycatalog:unitycatalog-spark_2.13:0.3.0&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.spark_catalog=io.unitycatalog.spark.UCSingleCatalog&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.&lt;catalog_name&gt;=io.unitycatalog.spark.UCSingleCatalog&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.&lt;catalog_name&gt;.uri=http://localhost:8080&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.&lt;catalog_name&gt;.token=&quot;</span><span class="w"> </span><span class="se">\</span>
@@ -1995,9 +2194,8 @@ command.</p>
 <div class="highlight"><pre><span></span><code>bin/spark-sql<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;gcs-uc-test&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--master<span class="w"> </span><span class="s2">&quot;local[*]&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--jars<span class="w"> </span><span class="s2">&quot;https://repo1.maven.org/maven2/com/google/cloud/bigdataoss/gcs-connector/3.0.2/gcs-connector-3.0.2-shaded.jar&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--packages<span class="w"> </span><span class="s2">&quot;io.delta:delta-spark_2.12:3.2.1,io.unitycatalog:unitycatalog-spark_2.12:0.2.0&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--packages<span class="w"> </span><span class="s2">&quot;io.delta:delta-spark_2.13:4.0.0,io.unitycatalog:unitycatalog-spark_2.13:0.3.0&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.spark_catalog=io.unitycatalog.spark.UCSingleCatalog&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.hadoop.fs.gs.impl=com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.hadoop.fs.AbstractFileSystem.gs.impl=com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--conf<span class="w"> </span><span class="s2">&quot;spark.sql.catalog.&lt;catalog_name&gt;=io.unitycatalog.spark.UCSingleCatalog&quot;</span><span class="w"> </span><span class="se">\</span>
@@ -2595,7 +2793,7 @@ Unity Catalog provides a much better user experience because you don’t need to
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.copy", "content.tabs.link", "navigation.footer", "navigation.expand", "navigation.indexes", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d6f25eb3.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>

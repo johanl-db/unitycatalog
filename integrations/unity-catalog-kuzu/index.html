@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/unitycatalog_256x256.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.38">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -441,6 +441,8 @@
       
         
       
+        
+      
     
     
     
@@ -523,6 +525,16 @@
     
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -540,7 +552,196 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../usage/api/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/api/catalogs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Catalogs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/api/schemas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schemas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/api/tables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/api/volumes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Volumes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/api/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/api/models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -551,8 +752,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             Tables
           </label>
@@ -1747,16 +1948,18 @@
 <h1 id="unity-catalog-kuzu-integration">Unity Catalog Kuzu Integration<a class="headerlink" href="#unity-catalog-kuzu-integration" title="Permanent link">&para;</a></h1>
 <p><a href="https://kuzudb.com/">Kuzu</a> is an embedded graph database built for query speed and scalability. It
 supports the property graph data model and the Cypher query language.</p>
-<p>Download and install the precompiled binary of Kuzu
-for your OS as per the instructions shown <a href="https://docs.kuzudb.com/installation/">here</a>.
-The <code>unity_catalog</code> functionality in Kuzu is made available via an extension that allows you to attach to a Unity Catalog and perform scan/copy operations on Delta tables.</p>
+<p>Download and install the precompiled binary of Kuzu for your OS as per the instructions shown
+<a href="https://docs.kuzudb.com/installation/">here</a>.
+The <code>unity_catalog</code> functionality in Kuzu is made available via an extension that allows you to attach to a
+Unity Catalog and perform scan/copy operations on Delta tables.</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <p>To run the examples shown below, you need the following:</p>
 <ul>
 <li>A running Unity Catalog server</li>
 <li>Kuzu's <a href="https://docs.kuzudb.com/installation/#command-line-shell">CLI</a> installed</li>
 </ul>
-<p>Follow the steps in the Unity Catalog <a href="https://docs.unitycatalog.io/quickstart/">quickstart</a> docs to create a Unity Catalog server.</p>
+<p>Follow the steps in the Unity Catalog <a href="https://docs.unitycatalog.io/quickstart/">quickstart</a> docs to create a
+Unity Catalog server.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Clone the repo</span>
 &gt;<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:unitycatalog/unitycatalog.git
 
@@ -1778,9 +1981,11 @@ or your preferred language client API:</p>
 <div class="highlight"><pre><span></span><code><span class="n">INSTALL</span><span class="w"> </span><span class="n">unity_catalog</span><span class="p">;</span>
 <span class="k">LOAD</span><span class="w"> </span><span class="n">EXTENSION</span><span class="w"> </span><span class="n">unity_catalog</span><span class="p">;</span>
 </code></pre></div>
-<p>In the following example, we will attach to the <code>default</code> schema under the <code>unity</code> catalog and scan the <code>numbers</code> Delta table.
-Note that the table, schema and catalog are pre-defined in the running Unity Catalog server, so you don't have to create them yourself.</p>
-<h4 id="1-attach-to-unity-catalog">1. Attach to Unity Catalog<a class="headerlink" href="#1-attach-to-unity-catalog" title="Permanent link">&para;</a></h4>
+<p>In the following example, we will attach to the <code>default</code> schema under the <code>unity</code> catalog and scan the <code>numbers</code>
+Delta table.
+Note that the table, schema and catalog are pre-defined in the running Unity Catalog server, so you don't have to
+create them yourself.</p>
+<h3 id="1-attach-to-unity-catalog">1. Attach to Unity Catalog<a class="headerlink" href="#1-attach-to-unity-catalog" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="n">ATTACH</span><span class="w"> </span><span class="p">[</span><span class="k">CATALOG_NAME</span><span class="p">]</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">[</span><span class="k">alias</span><span class="p">]</span><span class="w"> </span><span class="p">(</span><span class="n">dbtype</span><span class="w"> </span><span class="n">UC_CATALOG</span><span class="p">)</span>
 </code></pre></div>
 <ul>
@@ -1788,60 +1993,110 @@ Note that the table, schema and catalog are pre-defined in the running Unity Cat
 <li><code>alias</code>: Database alias to use in Kuzu - If not provided, the catalog name will be used.
   When attaching to multiple databases, it's recommended to use aliasing.</li>
 </ul>
-<p>For the example shown below, we will use the following command that attaches to the <code>default</code> schema under the <code>unity</code> catalog:</p>
+<p>For the example shown below, we will use the following command that attaches to the <code>default</code> schema under the
+<code>unity</code> catalog:</p>
 <div class="highlight"><pre><span></span><code><span class="n">ATTACH</span><span class="w"> </span><span class="s1">&#39;unity&#39;</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">unity</span><span class="w"> </span><span class="p">(</span><span class="n">dbtype</span><span class="w"> </span><span class="n">UC_CATALOG</span><span class="p">);</span>
 </code></pre></div>
-<p><strong>Note:</strong> Kuzu attaches to the <code>default</code> schema under the given catalog name. Specifying a custom schema to attach to is not currently supported.</p>
-<h4 id="2-data-type-mapping-from-unity-catalog-to-kuzu">2. Data type mapping from Unity Catalog to Kuzu<a class="headerlink" href="#2-data-type-mapping-from-unity-catalog-to-kuzu" title="Permanent link">&para;</a></h4>
-<p>The table below shows the mapping from Unity Catalog's type to Kuzu's type:
-| Data type in Unity Catalog         | Corresponding data type in Kuzu |
-|-----------------------------|----------------------------------|
-| BOOLEAN                     | BOOLEAN                           |
-| BYTE                        | UNSUPPORTED                          |
-| SHORT                       | INT16                                 |
-| INT                    | INT32                                 |
-| LONG                       | INT64                                 |
-| DOUBLE                     | DOUBLE                                 |
-| FLOAT                      | FLOAT                                 |
-| DATE                    | DATE                                 |
-| TIMESTAMP                    | TIMESTAMP                                 |
-| TIMESTAMP_NTZ                   | UNSUPPORTED                                 |
-| STRING                   | STRING                                 |
-| BINARY                       | UNSUPPORTED                      |
-| DECIMAL   | DECIMAL                                 |</p>
+<p><strong>Note:</strong> Kuzu attaches to the <code>default</code> schema under the given catalog name. Specifying a custom schema to attach to
+is not currently supported.</p>
+<h3 id="2-data-type-mapping-from-unity-catalog-to-kuzu">2. Data type mapping from Unity Catalog to Kuzu<a class="headerlink" href="#2-data-type-mapping-from-unity-catalog-to-kuzu" title="Permanent link">&para;</a></h3>
+<p>The table below shows the mapping from Unity Catalog's type to Kuzu's type:</p>
+<table>
+<thead>
+<tr>
+<th>Data type in Unity Catalog</th>
+<th>Corresponding data type in Kuzu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BOOLEAN</td>
+<td>BOOLEAN</td>
+</tr>
+<tr>
+<td>BYTE</td>
+<td>UNSUPPORTED</td>
+</tr>
+<tr>
+<td>SHORT</td>
+<td>INT16</td>
+</tr>
+<tr>
+<td>INT</td>
+<td>INT32</td>
+</tr>
+<tr>
+<td>LONG</td>
+<td>INT64</td>
+</tr>
+<tr>
+<td>DOUBLE</td>
+<td>DOUBLE</td>
+</tr>
+<tr>
+<td>FLOAT</td>
+<td>FLOAT</td>
+</tr>
+<tr>
+<td>DECIMAL</td>
+<td>DECIMAL</td>
+</tr>
+<tr>
+<td>DATE</td>
+<td>DATE</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>TIMESTAMP</td>
+</tr>
+<tr>
+<td>TIMESTAMP_NTZ</td>
+<td>UNSUPPORTED</td>
+</tr>
+<tr>
+<td>STRING</td>
+<td>STRING</td>
+</tr>
+<tr>
+<td>BINARY</td>
+<td>UNSUPPORTED</td>
+</tr>
+</tbody>
+</table>
 <p>If the type is marked as "unsupported", we do not support scanning it in Kuzu.</p>
-<h4 id="3-scan-data-from-table">3. Scan data from table<a class="headerlink" href="#3-scan-data-from-table" title="Permanent link">&para;</a></h4>
-<p>Finally, we can utilize the <code>LOAD FROM</code> statement to scan the <code>numbers</code> table. Note that you need to prefix the 
+<h3 id="3-scan-data-from-table">3. Scan data from table<a class="headerlink" href="#3-scan-data-from-table" title="Permanent link">&para;</a></h3>
+<p>Finally, we can utilize the <code>LOAD FROM</code> statement to scan the <code>numbers</code> table. Note that you need to prefix the
 external <code>numbers</code> table with the database alias (in our example <code>unity</code>). See the <code>USE</code> statement which allows you to
 skip this prefixing for a specific default database.</p>
 <div class="highlight"><pre><span></span><code><span class="k">LOAD</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">unity</span><span class="p">.</span><span class="n">numbers</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="o">*</span>
 </code></pre></div>
 <p>Result:</p>
-<div class="highlight"><pre><span></span><code>┌────────┬────────────┐
-│ as_int │ as_double  │
-│ INT32  │ DOUBLE     │
-├────────┼────────────┤
-│ 564    │ 188.755356 │
-│ 755    │ 883.610563 │
-│ 644    │ 203.439559 │
-│ 75     │ 277.880219 │
-│ 42     │ 403.857969 │
-│ 680    │ 797.691220 │
-│ 821    │ 767.799854 │
-│ 484    │ 344.003740 │
-│ 477    │ 380.678561 │
-│ 131    │ 35.443732  │
-│ 294    │ 209.322436 │
-│ 150    │ 329.197303 │
-│ 539    │ 425.661029 │
-│ 247    │ 477.742227 │
-│ 958    │ 509.371273 │
-└────────┴────────────┘
+<div class="highlight"><pre><span></span><code><span class="go">┌────────┬────────────┐</span>
+<span class="go">│ as_int │ as_double  │</span>
+<span class="go">│ INT32  │ DOUBLE     │</span>
+<span class="go">├────────┼────────────┤</span>
+<span class="go">│ 564    │ 188.755356 │</span>
+<span class="go">│ 755    │ 883.610563 │</span>
+<span class="go">│ 644    │ 203.439559 │</span>
+<span class="go">│ 75     │ 277.880219 │</span>
+<span class="go">│ 42     │ 403.857969 │</span>
+<span class="go">│ 680    │ 797.691220 │</span>
+<span class="go">│ 821    │ 767.799854 │</span>
+<span class="go">│ 484    │ 344.003740 │</span>
+<span class="go">│ 477    │ 380.678561 │</span>
+<span class="go">│ 131    │ 35.443732  │</span>
+<span class="go">│ 294    │ 209.322436 │</span>
+<span class="go">│ 150    │ 329.197303 │</span>
+<span class="go">│ 539    │ 425.661029 │</span>
+<span class="go">│ 247    │ 477.742227 │</span>
+<span class="go">│ 958    │ 509.371273 │</span>
+<span class="go">└────────┴────────────┘</span>
 </code></pre></div>
 <p>Currently, Kuzu only supports scanning from Delta Lake tables registered in the Unity Catalog.</p>
-<h4 id="4-use-statement">4. <code>USE</code> statement<a class="headerlink" href="#4-use-statement" title="Permanent link">&para;</a></h4>
-<p>If you want to refer to Delta tables without aliasing, e.g., referring to <code>unity.numbers</code> simply as <code>numbers</code>, you can also use the <code>USE</code> command to set a default namespace.</p>
+<h3 id="4-use-statement">4. <code>USE</code> statement<a class="headerlink" href="#4-use-statement" title="Permanent link">&para;</a></h3>
+<p>If you want to refer to Delta tables without aliasing, e.g., referring to <code>unity.numbers</code> simply as <code>numbers</code>, you can
+also use the <code>USE</code> command to set a default namespace.</p>
 <p>Consider the same attached Unity Catalog as above:</p>
 <div class="highlight"><pre><span></span><code><span class="n">ATTACH</span><span class="w"> </span><span class="s1">&#39;unity&#39;</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">unity</span><span class="w"> </span><span class="p">(</span><span class="n">dbtype</span><span class="w"> </span><span class="n">UC_CATALOG</span><span class="p">);</span>
 </code></pre></div>
@@ -1850,57 +2105,61 @@ skip this prefixing for a specific default database.</p>
 <span class="k">LOAD</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">numbers</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="o">*</span>
 </code></pre></div>
-<h4 id="5-copy-data-from-a-delta-table">5. Copy data from a Delta table<a class="headerlink" href="#5-copy-data-from-a-delta-table" title="Permanent link">&para;</a></h4>
-<p>The main purpose of the Unity Catalog extension is to facilitate seamless data transfer from tables in Unity Catalog to Kuzu.
+<h3 id="5-copy-data-from-a-delta-table">5. Copy data from a Delta table<a class="headerlink" href="#5-copy-data-from-a-delta-table" title="Permanent link">&para;</a></h3>
+<p>The main purpose of the Unity Catalog extension is to facilitate seamless data transfer from tables in Unity Catalog to
+Kuzu.
 In this example, we continue using the <code>unity</code> database, but this time,
 we copy the data and persist it to Kuzu database. This is done with the <code>COPY FROM</code> statement. Here is an example:</p>
-<p>We first create a <code>numbers</code> table in Kuzu. In this example we will make <code>numbers</code> have the same schema as the one defined in the Unity Catalog.</p>
+<p>We first create a <code>numbers</code> table in Kuzu. In this example we will make <code>numbers</code> have the same schema as the one
+defined in the Unity Catalog.</p>
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="n">NODE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="n">INT32</span><span class="p">,</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="n">DOUBLE</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="n">id</span><span class="p">));</span>
 </code></pre></div>
-<p>When the schemas are the same, we can copy the data from the external Unity Catalog table to the Kuzu table simply as follows.</p>
-<p><div class="highlight"><pre><span></span><code><span class="k">COPY</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">unity</span><span class="p">.</span><span class="n">numbers</span><span class="p">;</span>
+<p>When the schemas are the same, we can copy the data from the external Unity Catalog table to the Kuzu table simply as
+follows.</p>
+<div class="highlight"><pre><span></span><code><span class="k">COPY</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">unity</span><span class="p">.</span><span class="n">numbers</span><span class="p">;</span>
 </code></pre></div>
-In some cases, you may want to copy data into a subset of the properties in the Kuzu table. The following example shows how to copy a <code>unity.score</code> Delta table into the <code>score</code> property of the <code>numbers(id, score)</code> node table in Kuzu (setting the IDs values to their default null).
+<p>In some cases, you may want to copy data into a subset of the properties in the Kuzu table. The following example shows
+how to copy a <code>unity.score</code> Delta table into the <code>score</code> property of the <code>numbers(id, score)</code> node table in Kuzu
+(setting the IDs values to their default null).</p>
 <div class="highlight"><pre><span></span><code><span class="k">COPY</span><span class="w"> </span><span class="n">numbers</span><span class="p">(</span><span class="n">score</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">(</span><span class="k">LOAD</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">unity</span><span class="p">.</span><span class="n">score</span><span class="w"> </span><span class="k">RETURN</span><span class="w"> </span><span class="n">as_double</span><span class="p">);</span>
 <span class="o">`</span><span class="n">id</span><span class="o">`</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="o">`</span><span class="n">score</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="n">we</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">still</span><span class="w"> </span><span class="n">use</span><span class="w"> </span><span class="o">`</span><span class="k">COPY</span><span class="w"> </span><span class="k">FROM</span><span class="o">`</span><span class="w"> </span><span class="n">but</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">subquery</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="k">transforms</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">scanned</span><span class="w"> </span><span class="n">tuples</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="o">`</span><span class="n">unity</span><span class="p">.</span><span class="n">numbers</span><span class="o">`</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">schema</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">Kuzu</span><span class="w"> </span><span class="k">table</span><span class="p">.</span>
 <span class="o">```</span><span class="k">sql</span>
 <span class="k">COPY</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">(</span><span class="k">LOAD</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">unity</span><span class="p">.</span><span class="n">numbers</span><span class="w"> </span><span class="k">RETURN</span><span class="w"> </span><span class="n">score</span><span class="p">);</span>
-</code></pre></div></p>
-<h4 id="6-query-the-data-in-kuzu">6. Query the data in Kuzu<a class="headerlink" href="#6-query-the-data-in-kuzu" title="Permanent link">&para;</a></h4>
+</code></pre></div>
+<h3 id="6-query-the-data-in-kuzu">6. Query the data in Kuzu<a class="headerlink" href="#6-query-the-data-in-kuzu" title="Permanent link">&para;</a></h3>
 <p>Finally, we can verify the data in the <code>numbers</code> table in Kuzu.</p>
 <div class="highlight"><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="p">:</span><span class="n">numbers</span><span class="p">)</span><span class="w"> </span><span class="k">RETURN</span><span class="w"> </span><span class="n">n</span><span class="p">.*;</span>
 </code></pre></div>
-<p>Result:
-<div class="highlight"><pre><span></span><code>┌───────┬────────────┐
-│ n.id  │ n.score    │
-│ INT32 │ DOUBLE     │
-├───────┼────────────┤
-│ 564   │ 188.755356 │
-│ 755   │ 883.610563 │
-│ 644   │ 203.439559 │
-│ 75    │ 277.880219 │
-│ 42    │ 403.857969 │
-│ 680   │ 797.691220 │
-│ 821   │ 767.799854 │
-│ 484   │ 344.003740 │
-│ 477   │ 380.678561 │
-│ 131   │ 35.443732  │
-│ 294   │ 209.322436 │
-│ 150   │ 329.197303 │
-│ 539   │ 425.661029 │
-│ 247   │ 477.742227 │
-│ 958   │ 509.371273 │
-└───────┴────────────┘
-</code></pre></div></p>
-<h4 id="7-detach-unity-catalog">7. Detach Unity Catalog<a class="headerlink" href="#7-detach-unity-catalog" title="Permanent link">&para;</a></h4>
+<p>Result:</p>
+<div class="highlight"><pre><span></span><code><span class="go">┌───────┬────────────┐</span>
+<span class="go">│ n.id  │ n.score    │</span>
+<span class="go">│ INT32 │ DOUBLE     │</span>
+<span class="go">├───────┼────────────┤</span>
+<span class="go">│ 564   │ 188.755356 │</span>
+<span class="go">│ 755   │ 883.610563 │</span>
+<span class="go">│ 644   │ 203.439559 │</span>
+<span class="go">│ 75    │ 277.880219 │</span>
+<span class="go">│ 42    │ 403.857969 │</span>
+<span class="go">│ 680   │ 797.691220 │</span>
+<span class="go">│ 821   │ 767.799854 │</span>
+<span class="go">│ 484   │ 344.003740 │</span>
+<span class="go">│ 477   │ 380.678561 │</span>
+<span class="go">│ 131   │ 35.443732  │</span>
+<span class="go">│ 294   │ 209.322436 │</span>
+<span class="go">│ 150   │ 329.197303 │</span>
+<span class="go">│ 539   │ 425.661029 │</span>
+<span class="go">│ 247   │ 477.742227 │</span>
+<span class="go">│ 958   │ 509.371273 │</span>
+<span class="go">└───────┴────────────┘</span>
+</code></pre></div>
+<h3 id="7-detach-unity-catalog">7. Detach Unity Catalog<a class="headerlink" href="#7-detach-unity-catalog" title="Permanent link">&para;</a></h3>
 <p>To detach a Unity Catalog, use <code>DETACH [ALIAS]</code> as follows:</p>
-<div class="highlight"><pre><span></span><code>DETACH unity
+<div class="highlight"><pre><span></span><code><span class="n">DETACH</span><span class="w"> </span><span class="n">unity</span>
 </code></pre></div>
 <h2 id="contact">Contact<a class="headerlink" href="#contact" title="Permanent link">&para;</a></h2>
-<p>If you face any issues while using Kuzu's Unity Catalog extension,
-please reach out to the Kuzu team
-on <a href="https://kuzudb.com/chat">Discord</a>. Alternatively,
-you can open an issue or discussion in our <a href="https://github.com/kuzudb/kuzu">GitHub</a> repo.</p>
+<p>If you face any issues while using Kuzu's Unity Catalog extension, please reach out to the Kuzu team
+on <a href="https://kuzudb.com/chat">Discord</a>. Alternatively, you can open an issue or discussion in our
+<a href="https://github.com/kuzudb/kuzu">GitHub</a> repo.</p>
 
 
 
@@ -2049,7 +2308,7 @@ you can open an issue or discussion in our <a href="https://github.com/kuzudb/ku
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.copy", "content.tabs.link", "navigation.footer", "navigation.expand", "navigation.indexes", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d6f25eb3.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
